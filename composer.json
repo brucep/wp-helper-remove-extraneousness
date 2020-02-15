@@ -1,0 +1,13 @@
+{
+	"name": "brucep/wp-helper-remove-extraneousness",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Brucep\\WordPress\\RemoveExtraneousness\\": "src/"
+        }
+    }
+}
