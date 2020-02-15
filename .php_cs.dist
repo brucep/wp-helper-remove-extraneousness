@@ -1,0 +1,21 @@
+<?php
+
+/*
+ * Config file for PHP Coding Standards Fixer
+ *
+ * https://github.com/FriendsOfPHP/PHP-CS-Fixer
+ */
+
+$finder = PhpCsFixer\Finder::create()
+    ->in(['.'])
+;
+
+return PhpCsFixer\Config::create()
+    ->setRules([
+        '@PSR2' => true,
+        '@Symfony' => true,
+        'array_syntax' => ['syntax' => 'short'],
+        'ordered_imports' => true,
+    ])
+    ->setFinder($finder)
+;
